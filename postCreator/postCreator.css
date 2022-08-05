@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+.gfg {
+    margin: 3%;
+    position: relative;
+}
+
+.headline {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+    max-width: 700px;
+}
+
+.subHeadline {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+}
