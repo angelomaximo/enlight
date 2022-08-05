@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&family=Roboto+Slab:wght@500&family=Space+Grotesk&display=swap');
+
+:root {
+    --color1: hsla(348, 97%, 63%, 0);
+    --financeColor: rgb(56, 45, 6);
+    --economyColor: rgb(6, 56, 10);
+    --businessColor: rgb(6, 29, 56);
+    --technologyColor: rgb(9, 61, 70);
+    --blackColor: rgb(0, 0, 0);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,24 +31,32 @@ hr {
     background-color: #333;
 }
 
-.gfg {
+.generate {
     margin: 3%;
     position: relative;
+    height: 1920px;
+    width: 1080px;
+    background: linear-gradient(-90deg, var(--color1), var(--blackColor)),
+                url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover;
+}
+
+.txt {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    max-width: 1000px;
 }
 
 .headline {
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 16px;
-    max-width: 700px;
+    font-family: 'Poppins', Times, serif;
+    font-weight: 600;
+    font-size: 70px;
 }
 
 .subHeadline {
-    position: absolute;
-    top: 150px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 16px;
+    font-size: 36px;
 }
+
+
+
+
