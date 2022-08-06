@@ -1,3 +1,9 @@
+// HELPING FUNCTION
+function getRandomNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
 const tagInp = document.getElementById("tagInp");
 const headlineInp = document.getElementById("headlineInp");
 const subHeadlineInp = document.getElementById("subHeadlineInp");
@@ -5,6 +11,10 @@ const btn = document.getElementById("btn");
 const headlineTxt = document.getElementById("headlineTxt");
 const subHeadlineTxt = document.getElementById("subHeadlineTxt");
 const generate = document.getElementById("generate");
+const imgContainer = document.getElementById("imgContainer");
+
+
+let n = getRandomNum(1, 5);
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -17,18 +27,21 @@ btn.addEventListener('click', (e) => {
     subHeadlineTxt.innerHTML = `${subHeadline}`
 
     if (tag == 'finance') {
-        generate.style.background = `linear-gradient(-90deg, var(--color1), var(--blackColor)), 
-                                    url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover`;
+        imgContainer.innerHTML = `<img class="img" src="./img/finance/img${n}.jpg">`
     } else if (tag == 'economy') {
-        generate.style.background = `linear-gradient(-90deg, var(--color1), var(--economyColor)), 
-        url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover`;
+        imgContainer.innerHTML = `<img class="img" src="../img/(finance)stock-blur.jpg">`
     } else if (tag == 'business') {
-        generate.style.background = `linear-gradient(-90deg, var(--color1), var(--businessColor)), 
-        url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover`;
+        imgContainer.innerHTML = `<img class="img" src="../img/(finance)stock-blur.jpg">`
     } else if (tag == 'technology') {
-        generate.style.background = `linear-gradient(-90deg, var(--color1), var(--technologyColor)), 
-        url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover`;
+        imgContainer.innerHTML = `<img class="img" src="../img/(finance)stock-blur.jpg">`
     }
+
 })
 
+function doCapture() {
+    window.scrollTo(0, 0);
 
+    html2canvas(document.getElementById('generate')).then(function(canvas) {
+        console.log(canvas.toDataURL("image/jpeg", 0.9))
+    });
+}

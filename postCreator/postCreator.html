@@ -18,7 +18,7 @@
             <option value="finance">Finance</option>
             <option value="economy">Economy</option>
             <option value="business">Business</option>
-            <option value="technology">Technology</option>
+            <option value="tech">Tech</option>
         </select>
         <br>
 
@@ -36,8 +36,6 @@
         <hr>
 
         <div id="generate" class="generate">
-            <!-- <img class="img img-fluid" src="../img/[edit](finance)-stock.jpg"> -->
-
             <div class="txt">
                 <h1 id="headlineTxt" class="headline">
                     Enter headline 
@@ -47,7 +45,17 @@
                     Enter subHeadline
                 </h4>    
             </div>
+            <div id="imgContainer" class="imgContainer">
+            </div>
         </div>
+        <br>
+        <br>
+        <button class="btn btn-block btn-secondary" onclick="doCapture()">
+            Take Screenshot
+        </button>
+
+        <div id="output"></div>
+
         
     </div>
 
@@ -55,6 +63,8 @@
     </footer>
 
 
+
+    <script src="./html2canvas.js"></script>
     <script src="./postCreator.js"></script>
 </body>
 </html>
