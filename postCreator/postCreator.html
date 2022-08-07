@@ -14,7 +14,7 @@
     <div class="container container-fluid">
         <h1>Post Generator</h1>
         <label>Select the news domain:</label>
-        <select class="form-control" name="tag" id="tagInp">
+        <select class="form-control" name="domain" id="domainInp">
             <option value="finance">Finance</option>
             <option value="economy">Economy</option>
             <option value="business">Business</option>
@@ -30,10 +30,30 @@
         <input id="subHeadlineInp" class="form-control" type="text" placeholder="Enter the sub-headline">
         <br>
 
+        <label>Select image tag:</label>
+        <select class="form-control" name="tag" id="tagInp">
+            <option value="finance">Finance</option>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="tech">Tech</option>
+            <option value="cryptocurrency">Cryptocurrency</option>
+            <option value="cybersecurity">CyberSecurity</option>
+            <option value="apple">Apple</option>
+            <option value="google">Google</option>
+        </select>
+        <br>
+
         <button id="btn" type="submit" class="btn btn-primary">GENERATE</button>    
 
-
         <hr>
+
+        <button class="btn btn-block btn-secondary" onclick="doCapture()">
+            Take Screenshot
+        </button>
+
+        <div id="save">
+            
+        </div>
 
         <div id="generate" class="generate">
             <div class="txt">
@@ -43,18 +63,19 @@
     
                 <h4 id="subHeadlineTxt" class="subHeadline">
                     Enter subHeadline
-                </h4>    
+                </h4>
+
             </div>
+
+            <p id="domainTxt" class="domain">
+                domain
+            </p>
+
             <div id="imgContainer" class="imgContainer">
             </div>
         </div>
         <br>
         <br>
-        <button class="btn btn-block btn-secondary" onclick="doCapture()">
-            Take Screenshot
-        </button>
-
-        <div id="output"></div>
 
         
     </div>

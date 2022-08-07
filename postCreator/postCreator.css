@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&family=Roboto+Slab:wght@500&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&family=Roboto+Slab:wght@400&family=Space+Grotesk&display=swap');
 
 :root {
     --color1: hsla(348, 97%, 63%, 0);
@@ -31,14 +31,9 @@ hr {
     background-color: #333;
 }
 
-/* .generate {
-    margin: 3%;
-    position: relative;
-    height: 1920px;
-    width: 1080px;
-    background: linear-gradient(-90deg, var(--color1), var(--blackColor)),
-                url('../img/[edit]\(finance\)-stock.jpg') no-repeat center center / cover;
-} */
+a {
+    color: #fff;
+}
 
 .generate {
     margin: 3%;
@@ -63,9 +58,26 @@ hr {
 }
 
 .subHeadline {
-    font-size: 36px;
+    font-size: 40px;
 }
 
+.domain {
+    position: absolute;
+    top: 1070px;
+    left: 40px;
+    
+    color: #f9eab0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    letter-spacing: 8px;
+    border-left: 5px solid #f29c2d;
+    border-bottom: 5px solid #f29c2d;
+    border-bottom-left-radius: 46px;
+
+    padding: 16px;
+    padding-top: 10px;
+    padding-left: 24px;
+}
 
 .imgContainer {
     height: 100%;
