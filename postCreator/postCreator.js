@@ -41,14 +41,12 @@ btn.addEventListener('click', (e) => {
     } else if (tag == 'technology') {
         imgContainer.innerHTML = `<img class="img" src="../img/(finance)stock-blur.jpg">`
     }
-})
 
-function doCapture() {
     window.scrollTo(0, 0);
 
     html2canvas(document.getElementById('generate')).then(function(canvas) {
         console.log(canvas.toDataURL("image/jpeg", 0.9));
-        const thePrint = canvas.toDataURL("image/jpeg", 0.9)
-        save.innerHTML = `<br><a href="${thePrint}" target="_blank" class="btn btn-block btn-warning">SAVE</a>`;
+        const thePrint = canvas.toDataURL("image/jpeg", /*quality*/ 0.9)
+        save.innerHTML = `<br><iframe src="${thePrint}" title="Pic" width='100%' height='100%'></iframe>`;
     });
-}
+})

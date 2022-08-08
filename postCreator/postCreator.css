@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #191919;
     color: #fff;
 }
 
@@ -40,14 +40,14 @@ a {
     position: relative;
     height: 1920px;
     width: 1080px;
-    background-color: #191919;
+    background-color: #141414;
     color: #dedede;
 }
 
 .txt {
     position: absolute;
-    top: 200px;
-    left: 40px;
+    top: 190px;
+    left: 30px;
     max-width: 1000px;
 }
 
@@ -55,16 +55,29 @@ a {
     font-family: 'Poppins', Times, serif;
     font-weight: 600;
     font-size: 70px;
+
+    border-left: 2px solid #f29c2d;
+    border-top: 2px solid #f29c2d;
+    border-top-left-radius: 46px;
+    
+    padding: 16px;
+    padding-top: 36px;
+    padding-left: 36px;
 }
 
 .subHeadline {
     font-size: 40px;
+
+    border: 2px solid none;
+    
+    padding: 16px;
+    padding-left: 36px;
 }
 
 .domain {
     position: absolute;
-    top: 1070px;
-    left: 40px;
+    top: 1050px;
+    left: 30px;
     
     color: #f9eab0;
     font-family: 'Roboto Slab', serif;
@@ -77,7 +90,7 @@ a {
     padding: 16px;
     padding-top: 10px;
     padding-left: 24px;
-}
+} 
 
 .imgContainer {
     height: 100%;
@@ -90,7 +103,8 @@ a {
     display: inline-block;
     min-width: 1080px;
     max-width: 1080px;
-    max-height: 768px;
+    height: 740px;
+    border-radius: 46px 46px 0px 0px;
 }
 
 
